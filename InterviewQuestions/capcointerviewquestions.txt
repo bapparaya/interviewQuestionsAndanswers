@@ -1,0 +1,11 @@
+intraduce yourself tell us roles and responsibilities
+what is checked exceptions and unchecked exceptions
+how page factory is different from POM
+what is the difference between hashmap and linked hashmap
+difference between CSS and xpath
+how do you handle parent window and child window
+how do u choose abstract and interface in java
+what is encapsulation and how do u handle this
+String buffer and string builder classes
+devops process
+Junit

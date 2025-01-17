@@ -1,0 +1,157 @@
+1)Tell me about yourself
+
+2)What are your roles and responsiblities in your current project
+
+3)In which project you have worked explain it
+
+4)Can we override static methods
+==>yes both static method and non static methods can be overloaded and overriden but while calling static methods 
+in child we can still call the old method by using class name, inherited method and overidden methods can be called direlctly 
+to call non static methods we need to create an object through object we can call
+
+5)reverse string without removing the spaces
+
+6)can u write xpath using contians()
+==>xpath is a element locating statergy in salenium, it is derived from XML path launguage, extensible markup language
+absolute xpath>>which will traverse from each node of the DOM(document object model)
+relative xpath>>which will directly jump into the tag that we specify
+ //tagname[contains(@attribute, 'value')]==>//div[contains(@class, 'a4bIc')], //textarea[contains(text(),'xpath')]
+ using text method ==>//textarea[text()='xpath']
+ 
+ 7)how do u drag and drop in selenium
+ ==>by using actions class object we can achive
+  by using action class we do below acitvities
+  click
+  double click
+  context click(right click)
+  key down and up
+  move to element
+  drag and drop
+  scroll by
+  etc..
+  
+ 8)what is BDD
+  ==>bdd is framework which concentrate on the behavioural driven development, rather than the code it conentrate the how the application has 
+  to behave in real time test cases will be written by plain english using cucumber
+ 
+ 9)what is the use of driver in selenium
+ ==>driver is the key compenent in selenium wihtout driven we cannot work on the browser it will connect to the browser to do any kind of activity, 
+ which can be done in automation without driver it wount be possible
+ 
+ 10)what is page factory why we use it
+ ==>pagefactory is a built in class in selenium when enver we create an object of  the page class page class construcor will be called and inside constructor 
+ pagefactory init elements mehtod will initiate the webobjects in the page
+ 
+ 11)what are new features in selenium
+ driver.findElementByClassName("className");
+ ==>
+ driver.findElement(By.className("className"));
+ driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+ ==>driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+ 
+ 12)when we use robot class in selenium
+ ==>robot class is used to do keyboard and mouse activities and also to file handling, upload and download files
+ 
+ 13)what is fulent wait in selenium
+ ==>it is also one of the waiting startegy here we will be having polling time, say for example if we specify the time as 10 sec and poilling time as 3 sec for
+  every 3 sec it will check if the element is present or not if present then it will continue further else it will again wait if it is not able to find 
+  in 10 sec then it will throws exception
+  
+14)scroll a page program
+==>using javascript executor as this is not part of the webpage it is part of the browser
+
+15)how to find the duplicate values in the list
+==>add the list values in to set
+
+16)http methods crud operations explain using examples
+Operation		HTTP Method		Purpose							status codes
+Create			POST			Add a new resource				201 created
+Read			GET				Retrieve a resource				200 ok
+Update			PUT/PATCH		Modify an existing resource		200ok
+Delete			DELETE			Remove a resource				204 no contetn 
+
+17)why do we use kibana if we have postman console to check logs
+it provides data visualization, analytics we can create a dashboards to create data view for api logs
+
+18)oauth 2.0/oauth1
+OAuth 1.0 uses cryptographic signatures to verify requests, while OAuth 2.0 uses tokens. 
+
+19)different status codes
+200,201,204,207,400,401,404,429,500
+
+20)difference between rest and soap
+soap supports only XML it is more secure 
+Rest supports XML,JSON,HTML  less secure
+
+21)can we use post method to update the resource
+yes but not standered practice
+
+22)beren token
+A bearer token is a short-lived credential that grants access to a resource to the party in possession of the token. 
+Bearer tokens are a common HTTP authentication method and are a core feature of OAuth 2.0
+=================
+Second round
+
+1)Tell me something about yourself
+
+2)can u explain your project
+
+3)why string is immutable in java
+because of security and effeciency reasons string is immutable
+
+4)method over loading and overriding
+same name with different param is overload
+same signature but different impl is override
+
+5)what is abstruct class in java
+abstruct class is used to hide the impamentation and showing the implamentation to the user
+abstruct class will be have unimplamneted methods and implamented methods means which will have only signature not the implametation
+abstruc class start with the key word abstract and methods also abstruct and it can have non abstruc methods as well
+immdiate child class should implamet this
+
+6)what is super keyword in java
+super keyword referce to the the immdiate parent class parent class 
+super can be used to refer immediate parent class instance variable.
+super can be used to invoke immediate parent class method.
+super() can be used to invoke immediate parent class constructor.
+
+7)difference between final and finally
+final variable,method,class==>we cannot change the variable value,method cannot be overriden, class canot be inherited
+try {
+    driver.get("https://example.com");
+    test.pass("Navigated to example.com");
+} catch (Exception e) {
+    test.fail("Test failed: " + e.getMessage());
+} finally {
+    extent.flush(); // Ensures the report is generated
+    driver.quit();
+}
+
+8)what is contrstuctor
+constructor is a sepcial type of methd which is having name same as class name it is used to intialize the object
+constructor will be called at the time of object creation, it doesnot return any return type
+
+9)what is access modifier
+public all
+protected same package and child
+default same package not child class
+private within the class
+
+10)what is collection
+In Java, Collections refer to a framework that provides architecture for storing, managing, and manipulating groups of objects.
+collection framework will be used to work with the objects to store and manage and manipulate etc..
+which provide interfaces like arraylist, hasset, hashmap etc...
+by using we can work with objects and it doesnot have any fixed size tht is one more advantage
+if we want to go with list it allows duplicate values and index order will be preserved
+if we look into the set it will not allow duplicates and index order wont be there
+if we look into hashmap here also it wont allow duplicate values here we store key value pair combo
+
+11)difference between list and set
+if we want to go with list it allows duplicate values and index order will be preserved
+if we look into the set it will not allow duplicates and index order wont be there
+
+12)WAP to print occurance of element and count of elements from given in the array
+usig hasmap it can be done
+
+ 
+ 
