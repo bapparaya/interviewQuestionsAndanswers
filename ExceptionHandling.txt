@@ -1,0 +1,34 @@
+Exception
+Exception is an even that causes the program termination where ever the exception happens from there code execution wont happen
+ there are two kinds of exceptions in java
+ checked exceptions
+ unchecked exceptions
+ 
+ checked eceptions are the exceptions complier will recognises it adn it will suggest us to handle the eceptions we can handle this
+ by using try catch block or throws declaration
+ example: FilenoteFoundException, InterruptedException(thread.sleep),IOEException
+ 
+ checked exceptions are the exceptions which appears during the runtime which we have to identify adn handle it using
+ try catch block
+ example: NullPOinterException, ArrayOutOfBoundException,NosuchElementFoundException etc..
+ 
+ Handling the exception
+ using trycatch block we have to handle the exception
+ example
+ try{
+ sysout(100/0)
+ }
+ catch(Exception e)
+ {
+ sysout(e.getmessage())
+ }
+ 
+ for one try block multiple catch block are possible and only one finally block can be added
+ try bloc will exceute catch block will execute if there are any exception and it will handle then finally block will mandotorily
+ execute
+ 
+ usually finally block will be written to close the connection sort of oparation like driver.close or close the file connection if any file connection
+ esaablished
+ 
+ for unchecked exception we will use only try catch block
+ for checked exceptions we can use both try catch and throws
