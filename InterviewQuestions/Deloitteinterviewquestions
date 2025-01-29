@@ -1,0 +1,157 @@
+Deloitte testing interview question
+
+Round 1: (Technical)
+
+1. Explain about yourself and your roles and responsibilities.
+
+2. Write Java code to reverse a string while preserving the whitespace.
+
+3. Given an SQL table, find the second-largest salary of an employee.
+select max(salary) from employee where salary<(select max(salary) from employee)
+
+4. Explain the concept of joins and list the different types of joins available.
+joins will be used to connect between two tabled based on common condition to fetch the records from databse inner join, leftouter join right outer join
+inner join joins the table based on the matching columns
+left outer join will be used to left table of all rows and right table of matching records if right table data is not there then null values
+select clients left outer join clientadditionaldetails on clients.hha=.hha
+right outer join
+self join
+
+5. What is LinkedHashMap? Explain its use.
+linked hasmap is also used to store the values in key value formate here it reserve the inserstion order here it will order of the key values will be saved
+it allows one null key and multiple null values. it wllos duplicate values but not keys
+
+
+6. Explain black-box testing and white-box testing.
+white box testing we usually verify the code is working fine or not by giving the input and out put and here it will be verified accoding to the 
+code that the dev has written
+
+in the white box testing usally done to verify the functionality of an application accoding to the requirment here it involves smoke,unctional,integration,
+regression testing performance testing etc
+
+
+7. What is the difference between an exception and an error?
+exception is an even happens during the program excecution that terminates the further executin of the program
+filenot found exception,null pointer exception, no such element,element not inteceptable, stale element
+error are like the if any issue happs for server then we will get the internal server error
+internal server error,out of memory error
+
+
+8. Difference between findElement and findElements.
+find elemet will locate the specific element where as in findelements will locate multiple webelements here we need to store it inot the list collection to 
+process further
+in the find element we can perform action directly on the element like click,sendkeys etc
+but in the mulitple weemenbt we need to iterate thoru the loop then for the required element we can perform the action
+
+
+9. What is the difference between implicit wait and explicit wait?
+waits in selenium is used to over come the syncronisation issue here implicit wait is used t wait the elements for the mentioned times if it finds withing
+the time then it will continue else it will thow exception it is universally applicable to the code we have written
+in the explicit wait it will be applied to the specifi web element to wait for some time it will be applicable only for that pericular web element
+
+10. Write Selenium code to automate a calendar WebElement.
+
+11.How would you fetch the text from a text box in Selenium?
+there is a method in the selenium called weblement.getattribute("value")
+
+12.How do you enter text in an alert using Selenium?
+when we are delealing with alrets we need to swit it to the alert then we need to send the values using send keys method
+driver.switchto.alert.senkeyys.accept
+
+13. What is the difference between checked and unchecked exceptions?
+exceptons are the unexpected even that happens during the program execution which will terminate the program execution if we donot handle them
+there are two kinds of exceptions checked exception are the exceptions which are identified by the javacomplier ioe,filenotfound exception,
+unchecked exceptions are the exceptions which java complier will not identiy it while exceuting the program it will thor the exception
+ex:arrayindex out of bound,null pointer
+we can handle exception using try catch block try will exceute and catch wil exceute only if there is an exception otherwise no we can write multiple catch blocks
+finally block here we can add to close the connection it will mandatorily exceecute,  only one finally block
+
+14.If an XPath selects two elements on a webpage, does findElement throw an exception?
+it wont throw the exeption instead it will perform the action on the first element
+
+15. Explain smoke testing and sanity testing.
+smoke testing will be carried to check the basic and critcal functionalites are working fine or not here we will only check the critical feature to makesure the 
+feature is available in our cuurent project when ever we move our changes from one site to another site beofre doing the detail testing we will check the c
+critical features if theose are not working then report it back to dev team
+sanity testing will be performed after the bugfixes to check that specific functionality is working fine or not
+here we will only check the fixed issue and the related functionalities
+
+16. What are relative locators in Selenium?
+relative locators are introduced in selenium it allows finding elements based on their position relative to other elements.
+if there is a element called email if i want to locate password using the email we coud do that relative locator with.by.tag name(input=text).below he element()
+WebElement element = driver.findElement(RelativeLocator.with(By.tagName("tagname")).above(referenceElement));
+
+
+17. Explain the challenges you faced in your project.
+Handling Dynamic Elements in UI Automation
+Web elements often have dynamic attributes (IDs, classes, or XPaths) that change upon page refresh.
+Used dynamic XPath and CSS selectors instead of absolute locators and waiting statergies
+
+Managing Large Test Data & Environment Issues
+Different test cases required different test data, leading to data inconsistency and failures.
+Running tests on multiple environments (DEV, QA, STAGING) was difficult.
+Used Data-Driven Testing with Excel (Apache POI), JSON, and DB queries.
+
+API & Database Testing Challenges
+Ensuring data consistency across UI, API, and Database was challenging.
+Sometimes, API responses were delayed, causing failures in integration tests.
+Implemented API Testing with REST Assured to validate API responses independently
+
+Continuous Integration (CI/CD) Challenges
+Automated test cases were failing in Jenkins pipeline due to environmental differences.
+Developers pushed code before testing, breaking the build.
+Integrated Selenium, TestNG, and Cucumber tests into Jenkins/GitHub Actions.
+Used Docker to ensure consistency between local and CI environments.
+
+
+18. How would you pick test cases for regression testing?
+it will be done to check the existing functionality when new feature are intraduced into the projects
+we identified most common automatable testcases for that perticluar page 
+Core functionalities (Login, Payments, User Registration)
+Frequently used features (Search, Cart, Checkout)
+Critical bug fixes (Validate that past defects don’t reappear)
+Integration points (API calls, DB connections, third-party services)
+
+
+
+
+
+Round 2: (Techno-Managerial)
+
+1. Explain your framework in detail.
+
+2. In your framework, if you have 100 pages, do you create 100 Page Objects?
+
+3. What is an "Element click intercepted" exception, and how do you fix it?
+
+4. How do you take screenshots for failed test cases only in TestNG?
+
+5. Explain how to connect your test cases with Azure.
+
+6. What is the get fetch command?
+
+7. In Postman, how do you delete a variable after test execution is finished?
+
+8. Why do you prefer using Cucumber BDD in your project?
+
+9. Explain dynamic binding and static binding.
+
+10. What is method overloading, and what is method overriding?
+
+11. What is the difference between Comparable and Comparator?
+
+12.How would you conclude that a login page is user-friendly?
+
+13. What are 5 points you consider when writing a good test case?
+
+14. Suppose a developer is not fixing a bug; how would you approach the situation?
+
+15. What are threads in JMeter?
+
+16. Can you automate captchas?
+
+17.In what cases would you require fluent waits?
+
+18.In Selenium, how would you open a new tab?
+
+19.In Jenkins, what is the purpose of a CRON expression?

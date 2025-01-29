@@ -9,6 +9,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ActionsClassPractice {
 
@@ -42,6 +45,9 @@ public class ActionsClassPractice {
        action.keyDown(Keys.CONTROL).sendKeys("C").keyUp(Keys.CONTROL).perform();
        action.keyDown(Keys.CONTROL).sendKeys("V").keyUp(Keys.CONTROL).perform();
 		*/
+		
+		//Wait mywait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		//mywait.until(ExpectedConditions.visibilityOf(element));
 		WebElement dropdown = driver.findElement(By.xpath("//input[@id='comboBox']"));
 				dropdown.click();
 		JavascriptExecutor js = (JavascriptExecutor)driver;

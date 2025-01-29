@@ -1,0 +1,10 @@
+interfaces: it is used to hide the implamentation from the user and showing only the functionality is the the concept of abstruction 
+inter faces will be having be deault static and final variables
+it can have abstruc method which is by deafult access modifier will be public
+it can have implamneted default and static methods
+it cannot have constructor as it wont allows to create the object 
+for interfaces it wont allow to create an object but it can have the child class object in the interface variable
+example webdriver driver = new chromedriver() webdriver is an interface
+all the abstruc methids should be implamented in the immidiate child class relation will be implaments
+interface to interface it will be extends
+when ever we want to also can be used to accoding to the user implamentation
