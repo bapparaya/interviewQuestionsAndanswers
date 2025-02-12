@@ -8,3 +8,11 @@ example webdriver driver = new chromedriver() webdriver is an interface
 all the abstruc methids should be implamented in the immidiate child class relation will be implaments
 interface to interface it will be extends
 when ever we want to also can be used to accoding to the user implamentation
+
+🔹 Use an abstract class when:
+✔ You need to share common code among related classes.
+✔ You want to partially implement a class and enforce method overriding.
+
+🔹 Use an interface when:
+✔ You want to define a contract without worrying about implementation.
+✔ You need multiple inheritance (since Java allows a class to implement multiple interfaces).
