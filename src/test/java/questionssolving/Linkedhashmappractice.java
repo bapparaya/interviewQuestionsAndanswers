@@ -92,7 +92,7 @@ public class Linkedhashmappractice {
 		}
 		System.out.println(map);*/
 		
-		String s="bapparaya";
+		/*String s="bapparaya";
 		
 		char[] ch = s.toCharArray();
 		Map<Character, Integer> map = new HashMap<Character, Integer>();
@@ -103,6 +103,9 @@ public class Linkedhashmappractice {
 		map.put(c, 1);
 	}
 		}
-		System.out.println(map);
+		System.out.println(map);*/
+		
+		
+		
 }
 }

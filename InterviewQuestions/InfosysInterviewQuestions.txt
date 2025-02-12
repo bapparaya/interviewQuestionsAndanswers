@@ -104,9 +104,9 @@ same name with different param is overload
 same signature but different impl is override
 
 5)what is abstruct class in java
-abstruct class is used to hide the impamentation and showing the implamentation to the user
+abstruct class is used to hide the impamentation and showing the functionality to the user
 abstruct class will be have unimplamneted methods and implamented methods means which will have only signature not the implametation
-abstruc class start with the key word abstract and methods also abstruct and it can have non abstruc methods as well
+abstruc class start with the key word abstract and methods also abstruct and it can have non abstruct methods(both static and non static) as well
 immdiate child class should implamet this
 
 6)what is super keyword in java
@@ -144,7 +144,7 @@ which provide interfaces like arraylist, hasset, hashmap etc...
 by using we can work with objects and it doesnot have any fixed size tht is one more advantage
 if we want to go with list it allows duplicate values and index order will be preserved
 if we look into the set it will not allow duplicates and index order wont be there
-if we look into hashmap here also it wont allow duplicate values here we store key value pair combo
+if we look into hashmap here also it wont allow duplicate keys here we store key value pair combo
 
 11)difference between list and set
 if we want to go with list it allows duplicate values and index order will be preserved

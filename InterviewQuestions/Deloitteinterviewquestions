@@ -78,7 +78,7 @@ here we will only check the fixed issue and the related functionalities
 
 16. What are relative locators in Selenium?
 relative locators are introduced in selenium it allows finding elements based on their position relative to other elements.
-if there is a element called email if i want to locate password using the email we coud do that relative locator with.by.tag name(input=text).below he element()
+if there is a element called email if i want to locate password using the email we could do that relative locator with.by.tag name(input=text).below the element()
 WebElement element = driver.findElement(RelativeLocator.with(By.tagName("tagname")).above(referenceElement));
 
 
@@ -121,18 +121,30 @@ Round 2: (Techno-Managerial)
 1. Explain your framework in detail.
 
 2. In your framework, if you have 100 pages, do you create 100 Page Objects?
+it is not necessary always while page object models tells that create pages clasess for each page but it is not maintainable
+we can buil common class where multiple pages having same behaiour with minor difference in our corrent project we d have pages where it will list the same data
+for different conditions page look is and functionality is all same filters export for those we can build one common class and make use of it
 
 3. What is an "Element click intercepted" exception, and how do you fix it?
+element click intercept exception comes when driver tryies to interact with the ement is not clickable that time it happens
+it can be handled using wait until that elemnt is clickable, or we can use the javascript exceutor to click
 
 4. How do you take screenshots for failed test cases only in TestNG?
+to take the screenshot for failed test cases in testng we need to create takescrrenshot utility that method need to be called in the utility that we build 
+using itestlisner interface in the ontest fail method we can call and take the screenshot and attach it to the report
 
 5. Explain how to connect your test cases with Azure.
 
-6. What is the get fetch command?
+6. What is the git fetch command?
+git fetch command is used to fetch the latest changes which are availble in the remote repo without merging into the local repo fetch+merge=pull
 
 7. In Postman, how do you delete a variable after test execution is finished?
+we have a mehtod called unset how the way we do have for setting up the variable wnvironmet.set("variable name", "value")
+use environment.unset("variablename")
 
 8. Why do you prefer using Cucumber BDD in your project?
+as per my understanding cucumber works on the behavioural devlopment model where the test cases will be wriiten in plain english with language gherkin 
+so that non technical team can understand the test cases and usecases
 
 9. Explain dynamic binding and static binding.
 
