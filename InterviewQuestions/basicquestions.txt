@@ -55,18 +55,49 @@ Output: [1, 2, 3, 4]
 Java & OOPs Concepts
 
 • What is the final keyword in Java?
+==>final key word in java refer to the the value cannot be changed, we can make the variable and method and class can be final if it is deifned as fine
+variable value cannot be changed, method cannot be overridden, and class cannot be inherited
 
 • What is a constructor? Can we override a constructor?
+constructor is a special type of of methods which is used to intialize the objects, which will be having same name as class name, which doesnot return anything
+it will be called at the time of object creation, constructor will not be copied to the child class when it is extended to the child class
+we have to explictly call in the child class constructor using super keyword
+can we override constructor
+basically overriding meaning is like implimentation will be changed in the child class usally sonstructor will be used to intialize the obejcts as per the 
+fundamentals. there wont be any implamentation to override and also constructor name will be same as class name so in child class constructor will be child class name
+to override defination should be same, it doesnot have any return type
 
 • Where is a constructor used in your framework?
+in our corrent framework constructor is used in the baseclass to initialize the properties file, in all the child classes constructor we use to call it 
 
-• What is abstraction?
+• What is abstraction? and How to achieve multiple abstraction in Java?  What is an interface?
+abstruction is a method of hiding the implamentation and showing only functionality to the user. abstruction can be achived in 2 ways using abstruction class and 
+by using interface
+abstruction class when ever we have partial implamentation that time will go with abstruction class,
+usually abstruction class will be having both abstruct and non abstruct methods where abstruct method will be having abstruct key word non abstruc method will be 
+as normal, abstruc class can have constructor as well and in the extended immidiate child class we need to implament the abstruct methods.
+we can create an object of the child class and we have them in the parent class refrence variable
+it will allow both static and non static abstruct methods in abstruct class
+but abstruct static method is not possible because static is class level
+it will allow both static and non static variables as well
+abstruct class wont allow multiple inheritance
+abstruct class suports partial abstruction and do not support multiple inheritance
 
-• How to achieve multiple abstraction in Java?
+when it comes to interface it will have the keyword called interface and it can have only abtruct methods which will not be having any implamnetation and abstruct
+key also wont be there java 8 onwards it will allow default and static methods for implamentation 
+by default all the variables here are static and final
+ interface will be haveing implaments key word in child class all umimplamented methods showuld be implamentated in immidaite child class
+ interface allows multiple inheritence
+ interface supports full abstruction and supports multiple inheritance
 
-• What is an interface?
 
 • What is encapsulation? Where have you used it in your project?
+encapsulation is a technique of restricting the access of resources from other classes for example declaring the variable as a private and thorugh getter and setter
+methods we can access that variable outside of the class
+enapsulation is used for login related details like login id and password in the user module 
+
+if the method is private then access it outside the class is difficult but in the same class creating one more public metod calling the private method in
+the pulic class can give us the access
 
 • What is polymorphism? Where have you applied it in your framework?
 
@@ -77,10 +108,13 @@ Java & OOPs Concepts
 • What is the static keyword in Java?
 
 • What is memory management in Java?
+allocating and deallocating the men=mory for class objects method calls etc..
+heap memory and stack memory
 
 • What is garbage collection in Java?
+removing the unused objects
 
-• Difference between constructor overloading and
+• Difference between constructor overloading and method overloading
 
 • What are exceptions in Java?
 
@@ -89,16 +123,26 @@ Java & OOPs Concepts
 Selenium & Web Automation
 
 • How do you handle dynamic web elements?
+handling the dynamic web element in seleium is little tricky but we can use some element locating statergies to locate the webelemente say forexapmle using xpaths
+contains method, start with or text method we can use 
 
 • Write the syntax of the Select class and explain its methods.
+first we need to create an object of the select class in the constructor we have to pass the webelement and by using the object reference we have methods
+to select the vlues in the dropdown by visible text,index,value, 
+the same for deselecting as well but deselect works only when it is a multiple select dropdown
 
 • How do you handle iFrames?
+first we have to switch to the frames then we need to perform the action
+driver.switch to frames
+comes back driver.default all
 
 • How do you determine whether an element is an iFrame or not?
+html cotains iframe then we 
 
 • How do you handle mouse actions in Selenium?
 
 • How do you handle keyboard actions in Selenium?
+using action class object we can handle the keyboard activities
 
 • How do you press the ENTER key using the Actions class? Write the syntax.
 
